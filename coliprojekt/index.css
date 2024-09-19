@@ -1,0 +1,439 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@500&display=swap');
+html
+{
+scroll-behavior: smooth;
+}
+
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Rubik', sans-serif;
+}
+
+#navpc{
+    margin: 20px 7%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logosection{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.logosection img{
+    width: 130px;
+}
+
+.logosection p{
+    font-size: 30px;
+    margin-left: 10px;
+}
+
+#navpc ul li{
+    display: inline;
+    margin-right: 15px;
+    margin-left: 15px;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+#navpc ul li a{
+    text-decoration: none;
+    color: black;
+    transition: all 0.3s ease 0s;
+}
+
+#navpc ul li a:hover{
+    color: rgb(12,142,211);
+    transition: all 0.3s ease 0s;
+}
+
+.registerbutton{
+    padding: 8px 15px;
+    border-radius: 4px;
+    border: 2px solid rgb(12,142,211);
+    background-color: rgb(12,142,211);
+    font-size: 20px;
+    color: white;
+    cursor: pointer;
+    transition: all 0.3s ease 0s;
+}
+
+.registerbutton:hover{
+    transition: all 0.3s ease 0s;
+    background-color: white;
+    color: rgb(12,142,211);
+}
+
+#navmobile{
+    display: none;
+    margin: 20px 5%;
+}
+
+#navmobile ion-icon{
+    width: 35px;
+    height: 35px;
+}
+
+#slidedown{
+    position: fixed;
+    top: 0;
+    z-index: 999;
+    background-color: rgb(107, 194, 221);
+    width: 100vw;
+    display: none;
+}
+
+#slidedown ul{
+    margin: 20px 7%;
+    list-style-type: none;
+    margin-top: 40px;
+}
+
+#slidedown ul li{
+    margin-top: 20px;
+}
+
+#slidedown ul li a{
+    font-size: 20px;
+    text-decoration: none;
+    color: black;
+}
+
+@media only screen and (max-width: 876px){
+    #navpc{
+        display: none;
+    }
+
+    .logosection img{
+        width: 100px;
+    }
+
+    #navmobile{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+}
+
+.header
+{
+    display: flex;
+    
+    justify-content: center;
+    align-items: center;
+}
+
+#beforecard
+{
+    padding-left:5%;
+    padding-bottom: 3%;
+    padding-top: 3%;
+    font-size:20px;
+  
+}
+
+#coursetitle
+{
+    padding-top: 20px;
+    font-size: 60px;
+}
+#titullicourses
+{
+    padding-top: 20px;
+    font-size: 60px;
+}
+
+
+#intro
+{
+    /* padding-left: 3%;
+    padding-right: 3%;
+    padding-bottom: 5%; */
+    padding:5% 5%;
+    font-size: 20px;
+}
+
+#coursescard{
+    width:100%;
+    height:auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+#teachers
+{
+    font-size: 60px;
+}
+
+.subject
+{
+    border: 2px solid rgb(12,142,211);
+    width: 200px;
+    height:400px;
+    color:whitesmoke;
+    /* margin:10% 10%; */
+    display: flex;
+
+    justify-content: center;
+    /* padding-left: 5%; */
+    text-align: center;
+    margin-bottom: 10%;
+    border-radius: 10px;
+    cursor: pointer;
+    box-shadow:0 0 25px 10px rgba(0,0,0,.40);
+    /* box-shadow:horizontal vertical blur spread color; */
+
+    /* transition-duration: 400ms;
+    transition-timing-function: ease-in; */
+    /* transition: duration property delay timing-function; */
+    transition: all 400ms ease 0ms;
+   
+  
+  
+
+  
+}
+
+
+.subject:hover
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 30px;
+  
+    
+}
+
+#mathbck
+{
+    background-image:url(math1.jpg);
+    background-size: cover;
+    color:whitesmoke;
+    
+    
+}
+#physicsbck
+{
+    background-image:url(physicsbck.jpg);
+    background-size: cover;
+    color:whitesmoke;
+    background-position: center;
+    object-fit: contain;
+   
+    
+}
+
+
+#biobck
+{
+    background-image:url(biobck.avif);
+    color:whitesmoke;
+    background-position: center;
+    background-size: cover;
+
+}
+#chemistrybck
+{
+    background-image:url(chembck.jpg);
+    background-size: cover;
+    background-position: center;
+
+}
+
+@media only screen and  (max-width: 500px){
+   
+   #coursescard
+   {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+   }
+   
+   
+   
+    .subject
+    {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        width:90%;
+        margin-left:5%;
+        /* align-items: center; */
+    }
+    /* .profat
+    {
+        padding:0 5%;
+    } */
+    /* .teksti
+    {
+        display: flex;
+        padding: 0 5%;
+        justify-content: center;
+        align-items: center;
+    } */
+}
+
+@media only screen and (max-width: 840px){
+
+    #coursescard
+    {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+
+    }
+
+    .subject
+    {
+        flex-wrap: wrap;
+        width:40%;
+        height: 400px;;
+        margin-left: 10px;
+        margin-right:10px;
+        justify-content: center;
+        /* align-items: center; */
+
+    }
+}
+
+
+.ptch
+{
+    padding:3% 5%;
+    font-size: 40px;
+}
+
+.profat
+{
+    font-size: 20px;
+    padding:2% 5%;
+}
+.fotodiv
+{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+
+}
+.fotoprof
+{
+    width:400px;
+    height:400px;
+    margin-top: 20px;
+}
+
+
+@media only screen and (max-width:876px)
+{
+    .fotodiv
+    {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+}
+
+
+@media only screen and (max-width:600px)
+{
+    .profat
+    {
+        padding-top: 5%;
+    }
+
+    .ptch
+    {
+        padding-top: 5%;
+    }
+
+
+}
+
+#register
+{
+    padding:5% 5%;
+}
+
+#form
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+
+}
+
+.input
+{
+    width: 40%;
+    height:40px;
+    border-radius: 5px;
+    font-size: large;
+    border:1px solid rgb(12,142,211);
+    font-family: sans-serif;
+    padding-left: 10px;
+}
+
+#buttons
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#reset
+{
+    margin-left: 10px;
+  
+}
+
+#gender
+{
+    width:40%;
+   display: flex;
+   align-content: flex-start;
+   justify-content: flex-start;
+
+   font-size: large;
+   font-family: sans-serif;
+   padding-left: 10px;
+}
+
+#footer
+{
+    width:100%;
+    height:80px;
+    margin-top: 20px;
+    background-color: rgb(12,142,211) ;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* position: fixed;
+    bottom: 0; */
+}
+
+.rightsreserved
+{
+    padding-left:10px;
+}
+
+
+#loginlink
+{
+    font-size: large;
+    text-decoration: none;
+    margin-left: 5%;
+}

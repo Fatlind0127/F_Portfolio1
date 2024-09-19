@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script src="https://code.jquery.com/jquery-3.4.1.js" integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU=" crossorigin="anonymous"></script>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <h1>EFFECTS IN JQUERY</h1>
+    <h1>Animation</h1>
+    <button id='but1'>Animate</button>
+    <div id='div1' style="background-color:red;width:200px;height:200px;position:relative">Shkolla Digjitale</div> 
+    <script> 
+    //#(selector).animate({params},speed,callback);
+    //Params-tregon vetit e CSS qe do te animohen
+    //Speed-tregon per sa kohe do te ndodh nje animacion i caktuar:"slow","fast" ose ne Milisecond.
+         $(document).ready(function(){
+            $("#but1").click(function(){
+                $("#div1").animate({
+                            left:'750px', 
+                            opacity:'0.3',
+                             height:'200px',
+                            width:'200px'
+                                });
+                            });
+                         });
+
+
+
+
+</body>
+</html>

@@ -1,0 +1,181 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@500&display=swap');
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Rubik', sans-serif;
+    
+}
+
+#navpc{
+    margin: 20px 7%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logosection{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.logosection img{
+    width: 130px;
+}
+
+.logosection p{
+    font-size: 30px;
+    margin-left: 10px;
+}
+
+#navpc ul li{
+    display: inline;
+    margin-right: 15px;
+    margin-left: 15px;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+#navpc ul li a{
+    text-decoration: none;
+    color: black;
+    transition: all 0.3s ease 0s;
+}
+
+#navpc ul li a:hover{
+    color: rgb(12,142,211);
+    transition: all 0.3s ease 0s;
+}
+
+
+#navmobile{
+    display: none;
+    margin: 20px 5%;
+}
+
+#navmobile ion-icon{
+    width: 35px;
+    height: 35px;
+}
+
+#slidedown{
+    position: fixed;
+    top: 0;
+    z-index: 999;
+    background-color: rgb(107, 194, 221);
+    width: 100vw;
+    display: none;
+}
+
+#slidedown ul{
+    margin: 20px 7%;
+    list-style-type: none;
+    margin-top: 40px;
+}
+
+#slidedown ul li{
+    margin-top: 20px;
+}
+
+#slidedown ul li a{
+    font-size: 20px;
+    text-decoration: none;
+    color: black;
+}
+
+@media only screen and (max-width: 876px){
+    #navpc{
+        display: none;
+    }
+
+    .logosection img{
+        width: 100px;
+    }
+
+    #navmobile{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+}
+
+
+
+.buttons{
+    padding: 8px 15px;
+    border-radius: 4px;
+    border: 2px solid rgb(12,142,211);
+    background-color: rgb(12,142,211);
+    font-size: 20px;
+    color: white;
+    cursor: pointer;
+    transition: all 0.3s ease 0s;
+}
+
+.buttons:hover{
+    transition: all 0.3s ease 0s;
+    background-color: white;
+    color: rgb(12,142,211);
+  
+}
+
+
+
+
+
+
+#form
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+
+}
+
+.input
+{
+    width: 40%;
+    height:40px;
+    border-radius: 5px;
+    font-size: large;
+    border:1px solid rgb(12,142,211);
+    font-family: sans-serif;
+    padding-left: 10px;
+}
+
+#buttons
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#reset
+{
+    margin-left: 10px;
+  
+}
+
+#gender
+{
+    width:40%;
+   display: flex;
+   align-content: flex-start;
+   justify-content: flex-start;
+
+   font-size: large;
+   font-family: sans-serif;
+   padding-left: 10px;
+}
+
+@media only screen and (max-width:700px)
+{
+    .input
+    {
+        width:90%;
+    }
+}

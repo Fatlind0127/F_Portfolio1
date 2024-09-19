@@ -1,0 +1,113 @@
+<html>
+	<head>
+		<script src="https://code.jquery.com/jquery-3.4.1.js" integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU=" crossorigin="anonymous"></script>
+	</head>
+	<body>
+		<h1>EFFECTS IN JQUERY</h1>
+		<h1>Animation</h1>
+		<button id='but1'>Animate</button>
+		<div id='div1' style="background-color:red;width:200px;height:200px;position:relative">Shkolla Digjitale</div> 
+		<script> 
+		//#(selector).animate({params},speed,callback);
+		//Params-tregon vetit e CSS qe do te animohen
+		//Speed-tregon per sa kohe do te ndodh nje animacion i caktuar:"slow","fast" ose ne Milisecond.
+			 $(document).ready(function(){
+				$("#but1").click(function(){
+					$("#div1").animate({
+								left:'750px', 
+								opacity:'0.3',
+			 					height:'100px',
+								width:'100px'
+									});
+								});
+			 				});
+				//By default te gjitha elementet e HTML jane position static, 
+			//per te funksionuar animate(), duhet qe elementet te kthehen ne position relative, absolute ose fixed.
+		</script>
+		 <button id='but2'>Anima</button>
+		<div id='div2' style="background-color:blue;width:200px;height:200px;position:relative">Shkolla Digjitale</div> 
+	 	<script> 
+			$(document).ready(function(){
+				$("#but2").click(function(){
+					$("#div2").animate({
+								top:'px',
+								height:'toggle',
+								width:'toggle'
+									},3000);
+								});});
+		</script> 
+		
+	 <button id='but3'>Animate2</button>
+		<div id='div3' style="background-color:blue;width:200px;height:200px;position:relative">Shkolla Digjitale</div> 
+		<script> 
+		//Detyra 4
+		//Tek animacionet funksionojne edhe efektet e tjera si hide, show, toggle etj.
+			$(document).ready(function(){
+				$("#but3").click(function(){
+				
+					$("#div3").animate({top:'500px',height:'toggle',width:'toggle'},2000);
+					$("#div3").animate({left:'500px',height:'toggle',width:'toggle'},2000);
+						$("#div3").animate({top:'100px',height:'toggle',width:'toggle'},2000);
+						$("#div3").animate({left:'0px',height:'toggle',width:'toggle'},2000);
+								});
+							});
+		</script> 
+		<h1>Stop()</h1>
+		<button id='but4'>Animate4</button>
+		<button id='but5'>Stop</button>
+		<button id='but6'>Stop All</button>
+	
+		<div id='div4' style="background-color:blue;width:200px;height:200px;position:relative">Shkolla Digjitale</div>
+		<script> 
+		//Permes metodes stop() ne mund te e ndalojme nje proces qe eshte duke ndodhur.
+		//stop(stopAll goToEnd) mund te i caktojme edhe parmetra, per ti ndaluar te gjitha proceset apo per ti dergue ne fund proceset
+			$(document).ready(function(){
+				$("#but4").click(function(){
+					var div1 = $("#div4");
+						div1.animate({top:'500px',height:'toggle',width:'toggle'},2000).animate({left:'500px',height:'toggle',width:'toggle'},2000).animate({top:'0px',height:'toggle',width:'toggle'},2000).animate({left:'0px',height:'toggle',width:'toggle'},2000);
+								});
+
+
+
+						$("#but5").click(function()
+						{
+							$("#div4").stop();
+						});
+						$("#but6").click(function()
+						{
+							$("#div4").stop(true);
+						});
+						
+						});
+		</script>
+		<h1>Callback()</h1>
+		<button id="but8">Kliko</button>
+		<p id = 'p1'>Prizren</p>
+		<script>
+			//$(selector).hide(speed,callback);
+			$(document).ready(function()
+				{$('#but8').click(function()
+				{
+				//Callback eshte nje funksion qe ekzekutohet pasi te perfundon efekti krejtesisht.
+					$('#p1').toggle(2000,function(){
+						alert('Ky eshte nje paragraf');
+					});
+				});
+			});
+			
+		</script>	
+		<h1>Chaining()</h1>
+		<button id="but9">Kliko</button>
+		<img src='r.jfif' id = 'p2'>
+		<script>
+		//Chaining eshte nje metod ku mund te i ekzekutojme disa efekte me nje funksion.
+			//$(selector).css().hide().show();
+			$(document).ready(function()
+				{$('#but9').click(function()
+				{
+					$('#p2').hide(2000).show(2000);
+					});
+				});
+		</script>
+	</body>
+</html>
