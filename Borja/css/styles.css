@@ -386,11 +386,11 @@ body {
     
     .main-title {
         font-size: 48px;
-        margin-bottom: 80px;
+        margin-bottom: 120px;
     }
     
     .slider-nav {
-        top: 160px;
+        top: 165px;
         right: 20px;
     }
     
@@ -402,6 +402,10 @@ body {
     .slider-btn svg {
         width: 18px;
         height: 18px;
+    }
+    
+    .cards-slider {
+        margin-top: 75px;
     }
     
     /* Show 2 cards on mobile */
