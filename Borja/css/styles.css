@@ -196,7 +196,7 @@ body {
 /* Slider Navigation */
 .slider-nav {
     position: absolute;
-    top: 180px;
+    top: 130px;
     right: 40px;
     display: flex;
     gap: 15px;
