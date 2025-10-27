@@ -1,3 +1,6 @@
+/* Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@700;800;900&display=swap');
+
 /* Custom Fonts */
 @font-face {
     font-family: 'TT Interphases Pro Trl';
@@ -10,9 +13,7 @@
 
 @font-face {
     font-family: 'TT Interphases Pro Trl';
-    src: url('../fonts/TTInterphasesPro-Bold.woff2') format('woff2'),
-         url('../fonts/TTInterphasesPro-Bold.woff') format('woff'),
-         url('../fonts/TTInterphasesPro-Bold.ttf') format('truetype');
+    src: url('../fonts/TT Interphases Pro Trial Bold.ttf') format('truetype');
     font-weight: 700;
     font-style: normal;
 }
@@ -186,6 +187,7 @@ body {
 }
 
 .main-title {
+    font-family: 'Soliden Trial', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
     font-size: 72px;
     font-weight: 700;
     line-height: 1.1;
@@ -321,18 +323,19 @@ body {
 }
 
 .card-title {
-    font-family: 'TT Interphases Pro Trl';
+    font-family: 'TT Interphases Pro Trl', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
     font-size: 42px;
     font-weight: 700;
     line-height: 1.1;
     margin-bottom: 12px;
+    letter-spacing: -0.08em;
 }
 
 .card-description {
-    font-family: 'TT Interphases Pro Trl';
+    font-family: 'TT Interphases Pro Trl', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
     font-size: 15px;
     line-height: 1.5;
-    font-weight: 400;
+    font-weight: 700;
 }
 
 .card-image {
