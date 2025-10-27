@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Creación de contenido para todos</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <!-- Header Navigation -->
+    <header class="header">
+        <div class="container">
+            <div class="nav-wrapper">
+                <div class="logo">
+                    <img src="image/Logo.png" alt="Logo">
+                </div>
+                
+                <nav class="nav-menu">
+                    <a href="#" class="nav-link active">Home</a>
+                    <a href="#" class="nav-link">Sobre mí</a>
+                    <a href="#" class="nav-link">Programas</a>
+                    <a href="#" class="nav-link">Mentorías</a>
+                </nav>
+                
+                <div class="nav-right">
+                    <a href="#" class="contact-btn">
+                        Contáctame
+                        <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
+                            <path d="M6 12L10 8L6 4" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                        </svg>
+                    </a>
+                    <button class="hamburger">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="main-content">
+        <div class="container">
+            <section class="hero-section">
+                <h1 class="main-title">Creación de contenido para todos</h1>
+                
+                <!-- Slider Navigation -->
+                <div class="slider-nav">
+                    <button class="slider-btn prev-btn" id="prevBtn">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+                            <path d="M15 18L9 12L15 6" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                        </svg>
+                    </button>
+                    <button class="slider-btn next-btn" id="nextBtn">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+                            <path d="M9 6L15 12L9 18" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                        </svg>
+                    </button>
+                </div>
+
+                <!-- Cards Slider -->
+                <div class="cards-slider">
+                    <div class="cards-container" id="cardsContainer">
+                        <!-- Card 1: Mini creadores -->
+                        <div class="card card-green">
+                            <div class="card-content">
+                                <div class="card-tags">
+                                    <span class="tag">0-10K</span>
+                                    <span class="tag">Para todos</span>
+                                </div>
+                                <h2 class="card-title">Mini creadores</h2>
+                                <p class="card-description">para creadores que están empezando a crear contenido.</p>
+                            </div>
+                            <div class="card-image">
+                                <img src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?w=400&h=400&fit=crop" alt="Mini creadores">
+                            </div>
+                        </div>
+
+                        <!-- Card 2: Para empresas -->
+                        <div class="card card-red">
+                            <div class="card-content">
+                                <div class="card-tags">
+                                    <span class="tag">Pequeñas o grandes</span>
+                                </div>
+                                <h2 class="card-title">Para empresas</h2>
+                                <p class="card-description">Para empresas que quieren potenciar la posición de su marca en redes</p>
+                            </div>
+                            <div class="card-image card-image-purple">
+                                <img src="https://images.unsplash.com/photo-1531746020798-e6953c6e8e04?w=400&h=400&fit=crop" alt="Para empresas">
+                            </div>
+                        </div>
+
+                        <!-- Card 3: Mentorías 1-1 -->
+                        <div class="card card-blue">
+                            <div class="card-content">
+                                <div class="card-tags">
+                                    <span class="tag">1 Hora</span>
+                                </div>
+                                <h2 class="card-title">Mentorías 1-1</h2>
+                                <p class="card-description">Llamadas 1-1 de conmigo, donde resolveré tus dudas para que crezcas.</p>
+                            </div>
+                            <div class="card-image card-image-orange">
+                                <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=400&h=400&fit=crop" alt="Mentorías">
+                            </div>
+                        </div>
+
+                        <!-- Card 4: Programas grupales -->
+                        <div class="card card-yellow">
+                            <div class="card-content">
+                                <div class="card-tags">
+                                    <span class="tag">Grupos</span>
+                                    <span class="tag">Online</span>
+                                </div>
+                                <h2 class="card-title">Programas grupales</h2>
+                                <p class="card-description">para creadores que quieren aprender en comunidad y crecer juntos.</p>
+                            </div>
+                            <div class="card-image card-image-yellow">
+                                <img src="https://images.unsplash.com/photo-1539571696357-5a69c17a67c6?w=400&h=400&fit=crop" alt="Programas grupales">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
+

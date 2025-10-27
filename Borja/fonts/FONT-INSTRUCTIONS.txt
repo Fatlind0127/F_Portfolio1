@@ -1,0 +1,38 @@
+FONT FILES NEEDED
+=================
+
+Please add your font files to this folder with these names:
+
+1. "TT INTERPHASES PRO TRL" FONT
+--------------------------------
+Used for: Card titles and descriptions
+
+Required files:
+- TTInterphasesPro-Regular.woff2 / .woff / .ttf
+- TTInterphasesPro-Bold.woff2 / .woff / .ttf
+
+
+2. "SOLIDEN TRIAL" FONT
+-----------------------
+Used for: Navigation links (Home, Sobre mí, Programas, Mentorías)
+
+Required files:
+- SolidenTrial-Regular.woff2 / .woff / .ttf
+- SolidenTrial-Bold.woff2 / .woff / .ttf
+
+
+WHERE THESE FONTS ARE USED:
+----------------------------
+✓ "Soliden Trial" → Navigation links (Home, Sobre mí, Programas, Mentorías)
+✓ "TT Interphases Pro Trl" → Card titles ("Mini creadores", "Para empresas", etc.)
+✓ "TT Interphases Pro Trl" → Card descriptions (all text below the titles)
+
+
+NOTES:
+------
+- You need at least the .ttf files for the fonts to work
+- .woff2 and .woff provide better browser compatibility
+- The fonts are already configured in css/styles.css
+- Just add the font files here and they will work automatically!
+
+If your font files have different names, just rename them to match the names above.
